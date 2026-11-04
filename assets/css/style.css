@@ -81,6 +81,28 @@ h1, h2, h3, p { margin-top: 0; }
 .expertise-card p { min-height: 72px; }
 .expertise-card ul { list-style: none; padding: 11px 0 0; margin: 10px 0 0; border-top: 1px solid #30362e; }
 .expertise-card li::before { content: "↳"; color: var(--accent); margin-right: 7px; }
+.ai-section { padding-block: 108px 120px; background: #111510; border-bottom: 1px solid #242a22; }
+.ai-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-top: 35px; }
+.ai-heading .eyebrow { font-size: 8px; }
+.ai-heading h2 { margin: 15px 0 0; font-size: clamp(40px, 4.5vw, 58px); font-weight: 500; line-height: 1.12; letter-spacing: -.065em; }
+.ai-heading > p { max-width: 390px; margin: 0 0 6px; color: #a4aa9d; font-size: 12px; }
+.project-card { margin-top: 47px; padding: 22px 26px 19px; border: 1px solid #3b4533; background: radial-gradient(ellipse at 10% 12%, #20291b 0, #171b16 48%); }
+.project-topline { display: flex; justify-content: space-between; gap: 18px; color: #929a88; font: 8px var(--font-mono); letter-spacing: .1em; }
+.project-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; padding-block: 43px 32px; }
+.project-summary { max-width: 370px; }
+.project-label { margin-bottom: 14px; color: var(--accent); font: 8px var(--font-mono); letter-spacing: .12em; }
+.project-summary h3 { margin-bottom: 16px; font-size: clamp(25px, 3vw, 34px); font-weight: 500; line-height: 1.2; letter-spacing: -.055em; }
+.project-summary > p:not(.project-label) { color: #a4aa9d; font-size: 11px; }
+.button-outline { min-height: 42px; margin-top: 13px; border: 1px solid #59644c; color: var(--text); font-size: 10px; }
+.button-outline span { color: var(--accent); margin-left: 9px; }
+.button-outline:hover { border-color: var(--accent); }
+.project-details { border-top: 1px solid #343b30; }
+.project-detail { display: grid; grid-template-columns: 30px 1fr; gap: 9px; padding: 14px 0; border-bottom: 1px solid #343b30; }
+.detail-index { color: var(--accent); font: 9px var(--font-mono); padding-top: 2px; }
+.project-detail h4 { margin: 0 0 3px; font-size: 11px; font-weight: 600; }
+.project-detail p { margin: 0; color: #9da397; font-size: 9px; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 16px; border-top: 1px solid #343b30; }
+.project-tags span { padding: 5px 9px; border: 1px solid #394232; color: #c2c8b7; font: 8px var(--font-mono); }
 .approach-section { padding-block: 118px 130px; }
 .approach-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 100px; margin-top: 43px; }
 .approach-layout h2 { margin-bottom: 22px; }
@@ -110,6 +132,7 @@ h1, h2, h3, p { margin-top: 0; }
   .expertise-grid { grid-template-columns: repeat(2, 1fr); }
   .expertise-card { min-height: 280px; }
   .approach-layout { gap: 48px; }
+  .project-layout { gap: 36px; }
 }
 @media (max-width: 650px) {
   html { scroll-padding-top: 64px; }
@@ -129,12 +152,19 @@ h1, h2, h3, p { margin-top: 0; }
   .intro-band-inner { min-height: 86px; justify-content: center; text-align: center; }
   .intro-band-inner span { display: none; }
   .intro-band-inner p { font-size: 12px; }
-  .content-section, .expertise-section, .approach-section { padding-block: 78px 84px; }
+  .content-section, .expertise-section, .ai-section, .approach-section { padding-block: 78px 84px; }
   .about-grid, .approach-layout { grid-template-columns: 1fr; gap: 24px; margin-top: 32px; }
   .about-grid h2, .section-heading h2, .approach-layout h2, .contact-content h2 { font-size: 43px; }
   .about-copy .lead { font-size: 15px; }
   .section-heading { display: block; margin-top: 31px; }
   .section-heading > p { margin-top: 18px; }
+  .ai-heading { display: block; margin-top: 31px; }
+  .ai-heading h2 { font-size: 43px; }
+  .ai-heading > p { margin-top: 18px; }
+  .project-card { margin-top: 32px; padding: 17px 16px; }
+  .project-topline { font-size: 7px; }
+  .project-layout { grid-template-columns: 1fr; gap: 29px; padding-block: 32px 24px; }
+  .project-summary h3 { font-size: 28px; }
   .expertise-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 35px; }
   .expertise-card { min-height: 0; padding: 20px; }
   .card-icon { margin: 17px 0 8px; }
