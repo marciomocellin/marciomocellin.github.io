@@ -1,1 +1,6 @@
-theme: jekyll-theme-leap-day
+title: Marcio Mocellin — Data Scientist & Statistician
+description: Data science grounded in statistics, from modeling to MLOps.
+url: https://marciomocellin.github.io
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
